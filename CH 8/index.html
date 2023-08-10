@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Transition</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            background-color:aquamarine;
+            height: 350px;
+        }
+        .box1{
+            border: 2px solid black;
+            display: inline-block;
+            transform-origin: 0; 
+             transform: translate(50px, 56px);
+            /*transform: scale(2,4); 
+            transform: skew(2deg,5deg);*/
+        }
+        img:hover{
+            width: 245px;
+        }
+        img{
+            width: 145px;
+            height: 455px;
+           /* transition-property: width;
+            transition-duration: 4s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s; */
+            transition: width 4s ease-in-out 0s, height 4s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img id="myImage"src="https://source.unsplash.com/WLUHO9A_xik/200x200" alt="specific">
+            <button id="btn">Toggle</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width = '145px'
+    myImage.style.height = '16px'
+    btn.addEventListener("click",()=>{
+        myImage.style.height = '456px'
+        if(myImage.style.width === '550px'){
+            myImage.style.width = "145px"
+        }
+        else if(myImage.style.width === '145px'){
+            myImage.style.width = "550px"
+        }
+        myImage.style.width = "550px";
+    })
+</script>
+</html>

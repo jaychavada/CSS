@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- below link is used for take google fonts thorugh link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fonts and Display</title>
+
+    <!-- display inline is used to give only required space to box...in Display inline no margin and no padding will be counted-->
+    <!-- display inline:block will set height width margin and padding  -->
+    <!-- display none is used to remove element -->
+    <style>
+      .box1 {
+        width: 825px;
+        height: 85px;
+        background-color: skyblue;
+        /* display: inline; 
+         display: inline-block;
+            margin: 25px;
+            padding: 45px;*/
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          font-family: 'borel';
+      }
+      .box2 {
+        width: 225px;
+        height: 85px;
+        background-color: yellow;
+        display: inline;
+        /*display: none;*/
+        font-family: "Times New Roman", Times, serif;
+        font-family: 'borel';
+      }
+    </style>
+
+    <!-- below style block is for TEXT-PROPERTIES -->
+    <style>
+      p {
+        width: 125px;
+        height: 325px;
+        background-color: plum;
+        color: teal;
+        text-decoration: underline;
+        text-transform: capitalize;
+        line-height: 25px;
+        font-size: large;
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1{
+        font-size: medium;
+        font-style: oblique;
+        font-family: serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      consequuntur!
+    </div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+      reprehenderit.
+    </div>
+    <p>
+      This block is for text properties Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Delectus, libero?\
+    </p>
+    <h1>Other Properties of Font</h1>
+  </body>
+</html>

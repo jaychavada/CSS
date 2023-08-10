@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: load 1s ease-in-out 1;
+        }
+        header{
+            height: 120px;
+            background-color: black;
+        }
+        main{
+            height: 900px;
+            background-color: aqua;
+        }
+        /* img{
+            animation: rotate 1s ease-in infinite;
+        }*/
+        .slider{
+            background-color: brown;
+            height: 300px;
+            width: 100vw;
+        }
+        @keyframes load {
+            0%{
+               width: 0;  
+            }
+            50%{
+                width: 80vw;
+            }
+            100%{
+                width: 100vw;
+            }        
+        }
+        @keyframes rotate {
+            0%{
+               transform: rotate(0deg); 
+            }
+            100%{
+                transform: rotate(360deg);
+            }        
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <!-- <img src="supra.png" alt="" width="100px" height="60px"> -->
+        <div class="slider">
+
+        </div>
+    </main>
+</body>
+</html>
